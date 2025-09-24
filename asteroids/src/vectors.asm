@@ -83,11 +83,13 @@ segmentCounter:
         DEFB    0
 
 line_dx:
-        DEFB    0
+        DEFW    0
 line_dy:
-        DEFB    0
+        DEFW    0
 line_err:
-        DEFB    0
+        DEFW    0
+line_temp:
+        DEFW    0
 line_x0:
         DEFB    0
 line_y0:
@@ -754,157 +756,101 @@ DrawLine:
         LD      A, E
         LD      (line_y1), A
 
-        ; Absolute dx and step for x
+        ; Compute dx and step direction for x
         LD      A, D
         SUB     B
         JR      NC, .dxPositive
         NEG
-        LD      (line_dx), A
         LD      A, 0xFF
         LD      (line_sx), A
-        JR      .dxDone
+        JR      .dxStore
 .dxPositive:
-        LD      (line_dx), A
         LD      A, 1
         LD      (line_sx), A
-.dxDone:
+.dxStore:
+        LD      L, A
+        LD      H, 0
+        LD      (line_dx), HL
 
-        ; Absolute dy and step for y
+        ; Compute dy (store as negative) and step for y
         LD      A, E
         SUB     C
         JR      NC, .dyPositive
         NEG
-        LD      (line_dy), A
         LD      A, 0xFF
         LD      (line_sy), A
-        JR      .dyDone
+        JR      .dyStore
 .dyPositive:
-        LD      (line_dy), A
         LD      A, 1
         LD      (line_sy), A
-.dyDone:
+.dyStore:
+        LD      L, A
+        LD      H, 0
+        LD      (line_temp), HL        ; store |dy|
+        LD      D, H
+        LD      E, L
+        LD      HL, 0
+        XOR     A                      ; clear carry
+        SBC     HL, DE                 ; HL = -|dy|
+        LD      (line_dy), HL
 
-        LD      HL, line_dx
-        LD      B, (HL)                 ; B = |dx|
-        LD      HL, line_dy
-        LD      A, (HL)
-        CP      B
-        JR      NC, .yMajor
+        ; err = dx + dy
+        LD      HL, (line_dx)
+        LD      DE, (line_dy)
+        ADD     HL, DE
+        LD      (line_err), HL
 
-        ; X-major Bresenham
-        LD      A, B
-        SRL     A
-        LD      (line_err), A
-
-.xLoop:
-        LD      HL, line_x0
-        LD      B, (HL)
-        LD      HL, line_y0
-        LD      C, (HL)
+drawLine_loop:
+        LD      A, (line_x0)
+        LD      B, A
+        LD      A, (line_y0)
+        LD      C, A
         CALL    PlotPixel
 
-        LD      HL, line_x1
-        LD      A, (HL)
+        LD      A, (line_x1)
         CP      B
-        JR      NZ, .xAdvance
-        LD      HL, line_y1
-        LD      A, (HL)
+        JR      NZ, drawLine_continue
+        LD      A, (line_y1)
         CP      C
         RET     Z
-.xAdvance:
-        ; x += sx
-        LD      HL, line_sx
-        LD      A, (HL)
+drawLine_continue:
+        LD      HL, (line_err)
+        ADD     HL, HL
+        LD      (line_temp), HL
+
+        ; if (e2 >= line_dy)
+        LD      HL, (line_temp)
+        LD      DE, (line_dy)
+        XOR     A
+        SBC     HL, DE
+        JR      C, drawLine_skipX
+        LD      HL, (line_err)
+        LD      DE, (line_dy)
+        ADD     HL, DE
+        LD      (line_err), HL
+        LD      A, (line_sx)
         LD      E, A
-        LD      HL, line_x0
-        LD      A, (HL)
+        LD      A, (line_x0)
         ADD     A, E
         LD      (line_x0), A
-
-        ; err -= dy
-        LD      HL, line_err
-        LD      A, (HL)
-        LD      HL, line_dy
-        LD      E, (HL)
-        SUB     E
-        LD      (line_err), A
-        JR      NC, .xLoop
-
-        ; err += dx
-        LD      HL, line_err
-        LD      A, (HL)
-        LD      HL, line_dx
-        LD      E, (HL)
-        ADD     A, E
-        LD      (line_err), A
-
-        ; y += sy
-        LD      HL, line_sy
-        LD      E, (HL)
-        LD      HL, line_y0
-        LD      A, (HL)
-        ADD     A, E
-        LD      (line_y0), A
-        JR      .xLoop
-
-.yMajor:
-        LD      A, (line_dy)
-        SRL     A
-        LD      (line_err), A
-
-.yLoop:
-        LD      HL, line_x0
-        LD      B, (HL)
-        LD      HL, line_y0
-        LD      C, (HL)
-        CALL    PlotPixel
-
-        LD      HL, line_y1
-        LD      A, (HL)
-        CP      C
-        JR      NZ, .yAdvance
-        LD      HL, line_x1
-        LD      A, (HL)
-        CP      B
-        RET     Z
-.yAdvance:
-        ; y += sy
-        LD      HL, line_sy
-        LD      A, (HL)
+drawLine_skipX:
+        ; if (e2 <= line_dx)
+        LD      HL, (line_temp)
+        LD      DE, (line_dx)
+        XOR     A
+        SBC     HL, DE
+        JR      NC, drawLine_skipY
+        LD      HL, (line_err)
+        LD      DE, (line_dx)
+        ADD     HL, DE
+        LD      (line_err), HL
+        LD      A, (line_sy)
         LD      E, A
-        LD      HL, line_y0
-        LD      A, (HL)
+        LD      A, (line_y0)
         ADD     A, E
         LD      (line_y0), A
-
-        ; err -= dx
-        LD      HL, line_err
-        LD      A, (HL)
-        LD      HL, line_dx
-        LD      E, (HL)
-        SUB     E
-        LD      (line_err), A
-        JR      NC, .yLoop
-
-        ; err += dy, x += sx
-        LD      HL, line_err
-        LD      A, (HL)
-        LD      HL, line_dy
-        LD      E, (HL)
-        ADD     A, E
-        LD      (line_err), A
-
-        LD      HL, line_sx
-        LD      E, (HL)
-        LD      HL, line_x0
-        LD      A, (HL)
-        ADD     A, E
-        LD      (line_x0), A
-        JR      .yLoop
-
-; ----------------------------------------------------------------------------
-; Helper routines
-; ----------------------------------------------------------------------------
+drawLine_skipY:
+        JR      drawLine_loop
 FetchTrigLocal:
         ; Input: C = angle
         LD      B, 0
