@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <identifier>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks</identifier>
+  <date>1980</date>
+  <description>Tandy/Radio Shack Book: Programming the Z-80 2nd Edition (1980)(Rodnay Zaks)</description>
+  <description>Includes index</description>
+  <language>eng</language>
+  <mediatype>texts</mediatype>
+  <title>Programming the Z80</title>
+  <year>1980</year>
+  <collection>tandy_books</collection>
+  <collection>folkscanomy_computer</collection>
+  <collection>folkscanomy</collection>
+  <collection>additional_collections</collection>
+  <publicdate>2013-05-20 16:38:34</publicdate>
+  <uploader>computerbooks@textfiles.com</uploader>
+  <addeddate>2013-05-20 16:38:34</addeddate>
+  <identifier-access>http://archive.org/details/Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks</identifier-access>
+  <identifier-ark>ark:/13960/t8nc7jr38</identifier-ark>
+  <ppi>300</ppi>
+  <ocr>ABBYY FineReader 9.0</ocr>
+  <repub_state>4</repub_state>
+  <imagecount>626</imagecount>
+  <foldoutcount>0</foldoutcount>
+  <subject>instruction</subject>
+  <subject>byte</subject>
+  <subject>program</subject>
+  <subject>contents</subject>
+  <subject>programming</subject>
+  <subject>memory</subject>
+  <subject>data</subject>
+  <subject>addressing</subject>
+  <subject>figure</subject>
+  <subject>memory location</subject>
+  <subject>instruction set</subject>
+  <subject>mhz addressing</subject>
+  <subject>object code</subject>
+  <subject>register pair</subject>
+  <subject>location addressed</subject>
+  <subject>low order</subject>
+  <subject>program counter</subject>
+  <subject>high order</subject>
+  <subject>programming techniques</subject>
+  <subject>Zilog Z-80 (Microprocessor)</subject>
+  <isbn>0895880474</isbn>
+  <openlibrary>OL3848661M</openlibrary>
+  <creator>Zaks, Rodnay</creator>
+  <publisher>Berkeley, Calif. : Sybex</publisher>
+  <lccn>81166139 //r84</lccn>
+  <backup_location>ia905701_1</backup_location>
+  <openlibrary_edition>OL3848661M</openlibrary_edition>
+  <openlibrary_work>OL4655308W</openlibrary_work>
+  <ocr_module_version>0.0.13</ocr_module_version>
+  <ocr_converted>abbyy-to-hocr 1.1.7</ocr_converted>
+  <page_number_confidence>97.92</page_number_confidence>
+</metadata>

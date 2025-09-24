@@ -1,0 +1,50 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <leader>00575cam a2200205 a 4500</leader>
+  <controlfield tag="001">   81166139 //r84</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">19841206000000.0</controlfield>
+  <controlfield tag="008">810829s1980    caua          00110 eng  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   81166139 //r84</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">0895880474 (pbk.)</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2=" ">
+    <subfield code="a">QA76.8.Z54</subfield>
+    <subfield code="b">Z34 1980</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">001.64/2</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2="0">
+    <subfield code="a">Zaks, Rodnay.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Programming the Z80 /</subfield>
+    <subfield code="c">Rodnay Zaks.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">2nd ed.</subfield>
+  </datafield>
+  <datafield tag="260" ind1="0" ind2=" ">
+    <subfield code="a">Berkeley, Calif. :</subfield>
+    <subfield code="b">Sybex,</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">624 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Includes index.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Zilog Z-80 (Microprocessor)</subfield>
+    <subfield code="x">Programming.</subfield>
+  </datafield>
+</record>
+</collection>

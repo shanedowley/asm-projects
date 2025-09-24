@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks.djvu" source="derivative">
+    <format>DjVu</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_djvu.xml</original>
+    <mtime>1379495983</mtime>
+    <size>7576574</size>
+    <md5>569636f084beec781ecdb73798ab5d6e</md5>
+    <crc32>64137877</crc32>
+    <sha1>863a9314e0a5a34449277bba3fe0ef01a322827d</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks.epub" source="derivative">
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_abbyy.gz</original>
+    <mtime>1699759896</mtime>
+    <size>5588398</size>
+    <md5>3410fe9c0ab0b78b4cdd413aba3eea24</md5>
+    <crc32>048a7e07</crc32>
+    <sha1>a6027ac60c93cac26a873c2554ec98f080004995</sha1>
+    <format>EPUB</format>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_jp2.zip</original>
+    <mtime>1379493069</mtime>
+    <size>138904</size>
+    <md5>0e9d5ca4aaa46fd9208745e0bb326489</md5>
+    <crc32>6598329e</crc32>
+    <sha1>b9562324a593195f9a96fcbc9011d8580e3baf6a</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks.pdf" source="original">
+    <format>Image Container PDF</format>
+    <mtime>1379492613</mtime>
+    <size>15613893</size>
+    <md5>4f56f0ee3c9312a6f086552c8785c527</md5>
+    <crc32>2553b3a7</crc32>
+    <sha1>f66afa9d0065bfe0d691dffd6594268072109a1b</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks.pdf_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1369067913</mtime>
+    <size>731</size>
+    <md5>398f3d18d5f1ace997221d7298458993</md5>
+    <crc32>e4969be9</crc32>
+    <sha1>f79a95702567935efadb9bedcf755887a53c30c9</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_abbyy.gz" source="derivative">
+    <format>Abbyy GZ</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_jp2.zip</original>
+    <mtime>1379495282</mtime>
+    <size>9473258</size>
+    <md5>7394ac838c54f7e46bb14c7b0ba9ce56</md5>
+    <crc32>58c92a4f</crc32>
+    <sha1>e1ed9b52e1210ab396a08ac5aeebc2b76591a374</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_archive.torrent" source="metadata">
+    <btih>906cfe6b615fe398f2539a88a90c4788fc9e5be5</btih>
+    <mtime>1735527741</mtime>
+    <size>11079</size>
+    <md5>bb474ed8d0284f2962ab450fcef2656c</md5>
+    <crc32>7377b95f</crc32>
+    <sha1>9a2eeb332e0bbfedaee6183bdb16f0bd85550bc3</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_chocr.html.gz" source="derivative">
+    <ocr_module_version>0.0.13</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.7</ocr_converted>
+    <format>chOCR</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_abbyy.gz</original>
+    <mtime>1635697899</mtime>
+    <size>8655749</size>
+    <md5>80cd6c295aef3f1c222445f9fdae5f08</md5>
+    <crc32>88cc0866</crc32>
+    <sha1>ac08ab1c667553ac744efb41039a43b9abcd42ae</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_daisy.zip" source="derivative">
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_abbyy.gz</original>
+    <mtime>1719771034</mtime>
+    <size>373450</size>
+    <md5>54a022374dc3ecce777ecef9d7de3142</md5>
+    <crc32>ff4bd912</crc32>
+    <sha1>31c16694f25e21af585f8d2100fcf544769ee227</sha1>
+    <format>Daisy</format>
+    <filecount>9</filecount>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_dc.xml" source="original">
+    <format>Dublin Core</format>
+    <mtime>1458884805</mtime>
+    <size>839</size>
+    <md5>dd33a30cb7f0c4c90d7352ce13aa9b2c</md5>
+    <crc32>5fc34533</crc32>
+    <sha1>1e7982898879355ded8e47ddf13bf76ece58f5ad</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_djvu.xml</original>
+    <mtime>1635698203</mtime>
+    <size>819390</size>
+    <md5>3947e67ba38a30735bca305f17c45574</md5>
+    <crc32>77f6094b</crc32>
+    <sha1>1b13893a7b96a5552a23d6f1a2a3034d43c4ae5d</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_hocr.html</original>
+    <mtime>1635698009</mtime>
+    <size>11408901</size>
+    <md5>0144f21592165dcce77a5b6d856ebbe1</md5>
+    <crc32>29d3eb17</crc32>
+    <sha1>8ab1ce4a53db1286e9a81d1472335d9570c06199</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>a10ecef86377b168c9a32d86851c8313</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_hocr.html" source="derivative">
+    <hocr_char_to_word_module_version>1.0.0</hocr_char_to_word_module_version>
+    <hocr_char_to_word_hocr_version>1.1.2</hocr_char_to_word_hocr_version>
+    <ocr_module_version>0.0.13</ocr_module_version>
+    <ocr_converted>abbyy-to-hocr 1.1.7</ocr_converted>
+    <format>hOCR</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_chocr.html.gz</original>
+    <mtime>1635697973</mtime>
+    <size>23999854</size>
+    <md5>ccb5931f4b363caef9ab63527f0339f3</md5>
+    <crc32>fd2dc68f</crc32>
+    <sha1>4b969b8a3b33c13c750f9ac3c36f11f75287942f</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_hocr_pageindex.json.gz" source="derivative">
+    <hocr_pageindex_module_version>1.0.0</hocr_pageindex_module_version>
+    <hocr_pageindex_hocr_version>1.1.0</hocr_pageindex_hocr_version>
+    <format>OCR Page Index</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_hocr.html</original>
+    <mtime>1635698068</mtime>
+    <size>7398</size>
+    <md5>739b196972a71ec236c365958eb53982</md5>
+    <crc32>856c2742</crc32>
+    <sha1>bc9cb93fec8a64c77dfdf423498fbcc43845826f</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_hocr_searchtext.txt.gz" source="derivative">
+    <hocr_fts_text_module_version>1.1.0</hocr_fts_text_module_version>
+    <hocr_fts_text_hocr_version>1.1.0</hocr_fts_text_hocr_version>
+    <word_conf_0_10>10721</word_conf_0_10>
+    <word_conf_11_20>5213</word_conf_11_20>
+    <word_conf_21_30>5759</word_conf_21_30>
+    <word_conf_31_40>6308</word_conf_31_40>
+    <word_conf_41_50>7785</word_conf_41_50>
+    <word_conf_51_60>9507</word_conf_51_60>
+    <word_conf_61_70>11540</word_conf_61_70>
+    <word_conf_71_80>12491</word_conf_71_80>
+    <word_conf_81_90>11793</word_conf_81_90>
+    <word_conf_91_100>43036</word_conf_91_100>
+    <format>OCR Search Text</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_hocr.html</original>
+    <mtime>1635698172</mtime>
+    <size>225174</size>
+    <md5>69ca2f580fc4ad998d7a745aa0eff496</md5>
+    <crc32>099f4a4a</crc32>
+    <sha1>c53cdf4f4636357e4025aa07612ba4a9ddabcb9c</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks.pdf</original>
+    <mtime>1379493054</mtime>
+    <size>36327934</size>
+    <md5>478468cc03aea6e6acbad68d20d23831</md5>
+    <crc32>032bc5ae</crc32>
+    <sha1>5b34b294870d566ff8239a5bc0b2823cb4e098dd</sha1>
+    <filecount>626</filecount>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_marc.xml" source="original">
+    <format>MARC</format>
+    <mtime>1458884805</mtime>
+    <size>1883</size>
+    <md5>96593d07736fd8789709b808b0fe3677</md5>
+    <crc32>50de1195</crc32>
+    <sha1>bad5c4ca480f9c9a5ca98c93982934ec10da2901</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_meta.mrc" source="original">
+    <format>MARC Binary</format>
+    <mtime>1458884805</mtime>
+    <size>575</size>
+    <md5>f65acf382f2aa520da27d0da15f51ba8</md5>
+    <crc32>5c2f81bb</crc32>
+    <sha1>c9656216fe04fc034e4df3ac1437a13c1ff9ee48</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_meta.sqlite" source="original">
+    <format>Metadata</format>
+    <mtime>1463976103</mtime>
+    <size>10240</size>
+    <md5>3b568262db1e0190c6b3c131fc57f4a3</md5>
+    <crc32>3040a80c</crc32>
+    <sha1>414c40e7b8d0dfe55fca96af00aee9a44ac40db7</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1735527738</mtime>
+    <size>2233</size>
+    <md5>6d22751c380257342482430cf8692e96</md5>
+    <crc32>736f69b8</crc32>
+    <sha1>fccaec920667b6d01a918e0e02044331b184c258</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_page_numbers.json" source="derivative">
+    <format>Page Numbers JSON</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_djvu.xml</original>
+    <mtime>1635698592</mtime>
+    <size>112448</size>
+    <md5>f7d8d2e5590312d531f82fa2f73a5695</md5>
+    <crc32>58e5fd27</crc32>
+    <sha1>c0fba71a0306f9b47cbe29768932fc713cf5a3a5</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_scandata.xml" source="derivative">
+    <format>Scandata</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_djvu.xml</original>
+    <mtime>1635698592</mtime>
+    <size>209285</size>
+    <md5>2257e8af55320ce9d84307342bbb5399</md5>
+    <crc32>6dc7b701</crc32>
+    <sha1>e25f8409ae85803bf7b3cf64f526468012a6ded3</sha1>
+  </file>
+  <file name="Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_text.pdf" source="derivative">
+    <format>Additional Text PDF</format>
+    <original>Programming_the_Z-80_2nd_Edition_1980_Rodnay_Zaks_page_numbers.json</original>
+    <mtime>1635698618</mtime>
+    <size>11126787</size>
+    <md5>36354b0c48e73590b704e4f88df5c478</md5>
+    <crc32>3d9dc7e9</crc32>
+    <sha1>fa29c0a635d3b5b324e1e203d8c551c34811b5e0</sha1>
+  </file>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1699759898</mtime>
+    <size>20746</size>
+    <md5>ff6081d755f733fe2d6391e6dfb0f67b</md5>
+    <crc32>973a0b94</crc32>
+    <sha1>1149d532628b14ef803cd1cbe8ada76aebdc1be5</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+</files>
