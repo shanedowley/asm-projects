@@ -1,0 +1,103 @@
+        IFNDEF CONSTANTS_INCLUDED
+CONSTANTS_INCLUDED EQU 1
+
+; ----------------------------------------------------------------------------
+; constants.inc - Shared constants and structure layouts
+; ----------------------------------------------------------------------------
+
+STACK_TOP       EQU 0xFF00
+SCREEN_BITMAP   EQU 0x4000
+SCREEN_ATTR     EQU 0x5800
+SCREEN_BYTES    EQU 6144
+ATTR_BYTES      EQU 768
+SCREEN_WIDTH    EQU 256
+SCREEN_HEIGHT   EQU 192
+
+MAX_ASTEROIDS   EQU 12
+MAX_BULLETS     EQU 4
+FP_SHIFT        EQU 8
+
+; Ship structure offsets
+SHIP_POS_X      EQU 0
+SHIP_POS_Y      EQU 2
+SHIP_VEL_X      EQU 4
+SHIP_VEL_Y      EQU 6
+SHIP_ANGLE      EQU 8
+SHIP_THRUST     EQU 9
+SHIP_FIRE_TIMER EQU 10
+SHIP_INVULN     EQU 11
+SHIP_LIVES      EQU 12
+SHIP_RESPAWN    EQU 13
+SHIP_SCORE_L    EQU 14
+SHIP_SCORE_M    EQU 15
+SHIP_SCORE_H    EQU 16
+SHIP_FLAGS      EQU 17
+SHIP_STATE_SIZE EQU 18
+
+; Asteroid structure offsets
+AST_ACTIVE      EQU 0
+AST_SIZE        EQU 1
+AST_ANGLE       EQU 2
+AST_ROT         EQU 3
+AST_POS_X       EQU 4
+AST_POS_Y       EQU 6
+AST_VEL_X       EQU 8
+AST_VEL_Y       EQU 10
+AST_STRUCT_SIZE EQU 12
+
+; Bullet structure offsets
+BUL_ACTIVE      EQU 0
+BUL_TTL         EQU 1
+BUL_POS_X       EQU 2
+BUL_POS_Y       EQU 4
+BUL_VEL_X       EQU 6
+BUL_VEL_Y       EQU 8
+BUL_STRUCT_SIZE EQU 10
+
+; Control bit assignments
+CTRL_LEFT       EQU 0
+CTRL_RIGHT      EQU 1
+CTRL_THRUST     EQU 2
+CTRL_FIRE       EQU 3
+CTRL_HYPERSPACE EQU 4
+CTRL_START      EQU 5
+
+; HUD glyph IDs
+HUD_DIGIT_0     EQU 0
+HUD_DIGIT_1     EQU 1
+HUD_DIGIT_2     EQU 2
+HUD_DIGIT_3     EQU 3
+HUD_DIGIT_4     EQU 4
+HUD_DIGIT_5     EQU 5
+HUD_DIGIT_6     EQU 6
+HUD_DIGIT_7     EQU 7
+HUD_DIGIT_8     EQU 8
+HUD_DIGIT_9     EQU 9
+HUD_CHAR_S      EQU 10
+HUD_CHAR_C      EQU 11
+HUD_CHAR_O      EQU 12
+HUD_CHAR_R      EQU 13
+HUD_CHAR_E      EQU 14
+HUD_CHAR_L      EQU 15
+HUD_CHAR_I      EQU 16
+HUD_CHAR_V      EQU 17
+HUD_CHAR_A      EQU 18
+HUD_CHAR_W      EQU 19
+HUD_CHAR_G      EQU 20
+HUD_CHAR_M      EQU 21
+HUD_CHAR_DASH   EQU 22
+HUD_CHAR_BLANK  EQU 23
+HUD_CHAR_T      EQU 24
+HUD_CHAR_H      EQU 25
+HUD_CHAR_P      EQU 26
+HUD_CHAR_Q      EQU 27
+HUD_CHAR_U      EQU 28
+HUD_CHAR_F      EQU 29
+HUD_CHAR_EQUALS EQU 30
+
+SOUND_FIRE_MASK EQU 1
+SOUND_THRUST_MASK EQU 2
+SOUND_EXPLODE_MASK EQU 4
+
+
+        ENDIF
