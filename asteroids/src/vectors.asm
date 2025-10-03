@@ -509,12 +509,13 @@ DrawSingleAsteroid:
         LD      A, (IY + AST_POS_Y + 1)
         LD      (centerYHigh), A
 
+        PUSH    HL                       ; Preserve shape pointer for trig lookup
         LD      C, (IY + AST_ANGLE)
         CALL    FetchTrigLocal
         LD      (currentCos), A
         LD      A, L
         LD      (currentSin), A
-
+        POP     HL                       ; Restore shape pointer
         PUSH    HL                       ; Preserve shape pointer on stack
         CALL    TransformPolygonVertices
         POP     HL
@@ -857,10 +858,12 @@ FetchTrigLocal:
         LD      HL, cosTable
         ADD     HL, BC
         LD      A, (HL)                  ; Cosine result
+        LD      D, A                     ; Preserve cosine
         LD      HL, sinTable
         ADD     HL, BC
         LD      A, (HL)
         LD      L, A                  ; Sine result returned in L
+        LD      A, D                     ; Restore cosine into A
         RET
 
 MulTrigMagnitude:
